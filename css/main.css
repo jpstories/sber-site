@@ -19,25 +19,19 @@ header {
   height: 10%;
   display: flex;
   justify-content:space-between;
-  background-color:#62016D;
+  background-color:#5D198A;
   padding: 1%;
 }
 
-.rows {
-    background-color: darkblue;
-    display: flex;
-    height: 90%;
-}
-
 .menu {
-    background:#9702A7;
-    border-right: 4px solid #62016D;
+    background:#6A3FA2;
+    border-right: 4px solid #5D198A;
 }
 
 .main {
     flex-grow: 1;
     display: flex;
-    background:#D37BF4;
+    background:#9C93F1;
 }
 
 .menu a {
@@ -48,22 +42,26 @@ header {
 }
 
 .menu a:hover {
-    color: violet;
+    color: #9C93F1;
     text-decoration:underline;
 }
 
 table {
     border-collapse: collapse;
-    background-color:#D37BF4;
+    background-color:#9C93F1;
     margin: 20px;
 }
 
-th, td {border: 2px solid  #62016D;}
+th, td {border: 2px solid #5D198A;}
 
-tr:hover {background-color:#9702A7;}
+tr:hover {background-color:#6A3FA2;}
 
 .sortirovka {
     margin:auto;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 60px;
+ }
+ #add{
+   height: 30px;
+   margin-top: 60px;
  }
