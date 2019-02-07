@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>Сбербанк</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d09d0883-6c34-4ee1-b793-496acf87823a&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-button"><a href='#'>лол</a></div>
+        
+        <div class="header-home"><a href=#>Home</a></div>
+        
+        <div class="header-nav">
+                <ul>
+                    <li><a href="#">Задание</a></li>
+                    <li><a href="#">Лекция</a></li>
+                </ul>
+        </div>
+        
+        <div class="header-user">
+            
+            <div class="user-icon">
+                <i class="fa fa-user"></i>
+            </div>
+            
+            <div class="user-login">
+                <span>username</span>
+            </div>
+            
+        </div>
+    </header>
+    /*==============================*/
+    
+    <div class="wrap">
+        <div class="container">
+            <div class="section">
+                <h2>Задание</h2>
+                <div class="task">
+                    <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+                </div>
+                <div class="info">
+                    <div class="date-lecture"></div>
+                    <div class="group">
+                        <h3>Моя группа</h3>
+                        <ul>
+                            <li>Человек</li>
+                            <li>Человек</li>
+                            <li>Человек</li>
+                            <li>Человек</li>
+                            <li>Человек</li>
+                            <li>Человек</li>
+                            <li>Человек</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-reader">
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-pdf">
+        <span>Лекции</span>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <span>@Copyright 2019</span>
+            </div>
+            <div class="footer-info">
+                <p>ШКИТ - школа программирования и технологий</p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href=#>Группа</a></li>
+                    <li><a href=#>Задания</a></li>
+                    <li><a href=#>Лекции</a></li>
+                </ul>
+            </div>
+            <div class="footer-telephone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>88809993351</span>
+            </div>
+        </div>
+        <div class="map">
+           <div id="map"></div>
+        </div>
+    </footer>
+    
+    
+    
+    <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){ 
+        // Создание карты.    
+        var myMap = new ymaps.Map("map", {
+            center: [48.494109, 135.061798],
+            zoom: 16,
+        });
+    }
+</script>
+</body>
+</html>
