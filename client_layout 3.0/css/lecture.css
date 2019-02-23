@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+
+:root{
+    --margin: 20px;
+}
+
+/*==============================*/
+
+:root{
+    --cont-margin: 20px;
+}
+
+body{
+    height: 100vh;
+}
+
+.wrap {
+    position: relative;
+    top: 45px;
+    padding: 50px 10%;
+    z-index: 996;
+    height: 61.8vh;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-gap: var(--cont-margin);
+    margin-top:75px
+}
+
+.section{
+    display: flex;
+    flex-flow: column;
+}
+
+.section ul{
+    display:flex;
+    flex-flow:column;
+    list-style: none;
+    line-height: 1.9em;
+}
+
+.section ul li a{
+    font-size:1.3em;
+    text-decoration: none;
+}
+
+.section > div{
+    width: 100%;
+    margin-top: var(--cont-margin);
+}
+
+/*sidebar*/
+.last-next-lection{
+    background: snow;
+    border:1px solid #ccc;
+}
+.actually__theme {
+    text-decoration: underline;
+}
+
+.title__lection {
+    display:flex;
+    width:100%;
+    font-size:1.7em;
+    align-items:left;
+}
+
+.title__lection span {
+    display:flex;
+    flex-flow:column;
+    width:100%;
+    align-items:center;
+}
+
+
+
+.sidebar-lection {
+    display:flex;
+    flex-flow:column;
+    font-size:1.3em;
+    text-align: center;
+}
+
+
+.sidebar-lection a {
+    text-decoration: none;
+}
+
+
+.sidebar-last-lection {
+    display:flex;
+    flex-flow:column;
+    border:1px solid #999;
+    
+}
+
+.sidebar-last-lection div{
+    padding:15px;
+    background: #7882f8;
+}
+
+.sidebar-last-lection div:last-child{
+    background: #efefef;
+}
+
+
+.sidebar-next-lection div {
+    padding:15px;
+    background: #59ad80;
+}
+
+.sidebar-last-lection div:first-child span a{
+    color:white;
+}
+
+.sidebar-next-lection div:first-child span a{
+    color:white;
+}
+
+.sidebar-next-lection div:last-child {
+    background: #f4f4f4;
+}
+
+
+.sidebar-next-lection {
+    display:flex;
+    flex-flow:column;
+    margin-top:50px;
+    border:1px solid #999;
+}
+
+.sidebar-last-lection > div:first-child{
+    border-bottom: 1px solid #999;
+}
+
+.sidebar-next-lection > div:first-child{
+    border-bottom: 1px solid #999;
+}
+
+
+.sidebar-next-lection div{
+    text-align: center;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    
+    .container .section{
+        grid-column: 1;
+        grid-row: 2;
+        margin-top:25px;
+    }
+    
+    .wrap {
+        height: 85vh;
+    }
+    
+    .title__lection u {
+        font-size: 23px;
+        margin-top:10px;
+    }
+    
+    .title__lection span {
+        font-size: 25px;
+        margin-bottom: -25px;
+    }
+}

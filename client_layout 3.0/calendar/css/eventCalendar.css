@@ -1,0 +1,142 @@
+/*= CORE CSS */
+#eventCalendar{
+    width: 498px; 
+    height: 349.4px;
+}
+
+
+.eventCalendar-hidden {
+	display: none;
+    
+}
+
+.eventCalendar-wrap {
+	position: relative;
+    overflow: hidden;
+}
+
+.eventCalendar-arrow {
+	position: absolute;
+	z-index: 5;
+	top: 3px;
+    
+}
+
+.eventCalendar-prev {
+	left: 3px;
+    
+}
+
+.eventCalendar-next {
+	right: 3px;
+}
+
+.eventCalendar-monthTitle {
+	display: block;
+	text-align: center;
+}
+
+.eventCalendar-monthWrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+    
+}
+
+.eventCalendar-currentMonth {
+	z-index: 1;
+    
+}
+
+.eventCalendar-daysList {
+	display: table;
+	width: 100%;
+    
+}
+
+.eventCalendar-showAsWeek {
+	display: block;
+    
+}
+
+.eventCalendar-daysList li {
+	display: table-cell;
+    font-size:1.1em;
+}
+@media screen and (max-width:600px){
+    .eventCalendar-daysList li {
+        font-size:0.7em;
+    }
+    
+    .eventCalendar-monthTitle {
+        margin-right:5px;   
+    }
+    
+    .eventCalendar-wrap {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #eventCalendar{
+        width: 365px; 
+        height: 350.4px;
+        top:-45px;
+    }
+}
+
+.eventCalendar-dayWithEvents {
+	background: rgba(0, 0, 0, 0.15);
+    
+}
+
+.eventCalendar-current {
+	background: rgba(0, 0, 0, 0.35);
+    
+}
+
+.eventCalendar-showAsWeek li {
+	display: block;
+	float: left;
+	width: 14.28%;
+	height: 20px;
+    
+}
+
+.eventCalendar-daysList a {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	min-width: 7px;
+    
+}
+
+.eventCalendar-loading {
+	display: block;
+	min-width: 100px;
+	height: 40px;
+	line-height: 30px;
+    
+}
+
+.eventCalendar-list {
+	position: fixed;
+    top:150px;
+    background:#6dbe9c;
+    width:300px;
+    display:flex;
+    flex-flow:column;
+    right:50px;
+}
+
+@media screen and (max-width:1080px){
+    .eventCalendar-list{
+        top:355px;
+
+    }
+}
+
+.eventCalendar-oldEventList {
+	z-index: 2;
+}
+/* end of core CSS */

@@ -1,0 +1,141 @@
+
+/*burger-button*/
+
+.burger-menu{
+	display:none;
+	width:50px;
+	height: 40px;
+	cursor: pointer;
+	position: absolute;
+	top:15px;
+	left:24px;
+}
+
+
+.burger-menu span{
+	position: absolute;
+	width:50px;
+	height:4px;
+	left:0;
+	background:#1a1a1a;
+	transition: 0.3s;
+}
+
+.burger-menu .burger-one{
+	top:0;
+}
+
+.burger-menu .burger-two, .burger-menu .burger-three{
+	top:13px;
+}
+.burger-menu .burger-four{
+	top:26px;
+}
+
+.burger-menu.burger-open .burger-one, .burger-menu.burger-open .burger-four{
+	display:none;
+}
+
+.burger-menu.burger-open .burger-two{
+	transform: rotate(45deg);
+}
+
+.burger-menu.burger-open .burger-three{
+	transform: rotate(-45deg);
+}
+
+.header-empty{
+	display:none;
+}
+
+
+@media screen and (max-width: 700px){
+    .burger-menu {
+        display:block;
+    }
+    .header-empty{
+    	display:inline;
+    }
+}
+
+/*burger-menu*/
+
+.menu-mobile {
+    position: fixed;
+    z-index: 999;
+    top:60px;
+    display: flex;
+    height: max-content;
+    left: -105%;
+    background: rgba(150, 190, 140, 0.97);
+    flex-flow: column;
+    width: 100%;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    color:black;
+    font-size:1.3em;
+}
+.menu-mobile li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.menu-mobile li a:hover{
+    color:#fff;
+}
+
+.menu-mobile li:last-child{
+    margin-bottom: 10px;
+}
+
+
+.menu-mobile ul{
+	margin-top:10px;
+	display:flex;
+	flex-flow:column;
+	width:100%;
+	align-items: center;
+}
+
+@media screen and (min-width: 700px){
+	.menu-mobile{
+		display:none;
+	}
+}
+
+
+.mobile-menu-user{
+	display:flex;
+	width:90%;
+	height:max-content;
+	flex-flow:row;
+	align-items: center;
+	justify-content: center;
+	border-top:1px dashed #777;
+	padding:15px;
+	margin:0 auto;
+}
+
+.mobile-menu-user div:first-child{
+	margin-right:10px;
+}
+.mobile-menu-user div:last-child{
+	text-decoration: underline;
+}
+
+.mobile-menu-user-info{
+	width: 90%;
+	display:flex;
+	flex-flow:column;
+	justify-content: center;
+	align-items: center;
+	padding:5px;
+	margin:0 auto;
+	font-size:1.2em;
+}
+
+.mobile-menu-user-info span{
+	margin-bottom: 5px;
+}

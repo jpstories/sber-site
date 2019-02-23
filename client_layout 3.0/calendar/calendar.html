@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Календарь событий</title>
+	<link rel="stylesheet" href="css/eventCalendar.css">
+	<link rel="stylesheet" href="css/eventCalendar_theme_responsive.css">
+</head>
+<body>
+	<div id="eventCalendar" style="margin: 50px auto;"></div>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/jquery.eventCalendar.js"></script>
+	<script>
+	$(function(){
+		var data = [
+			{ "date": "2019-02-11 10:15:20", "title": "Событие 1", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
+			{ "date": "2019-02-15 10:15:20", "title": "Событие 2", "description": "Следующее занятие пройдет в аудитории 428", "url": "" },
+			{ "date": "2019-02-12 10:15:20", "title": "Событие 3", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
+			{ "date": "2019-02-18 10:15:20", "title": "Событие 4", "description": "Встреча с преподавателями курса в ДВГУПС", "url": "http://www.dvgups.ru" },
+		]
+		$('#eventCalendar').eventCalendar({
+			jsonData: data,
+			eventsjson: 'data.json',
+			jsonDateFormat: 'human',
+			startWeekOnMonday: 'true',
+			openEventInNewWindow: true,
+			dateFormat: 'dddd DD-MM-YYYY',
+			showDescription: false,
+			locales: {
+				locale: "ru",
+				txt_noEvents: "Нет запланированных событий",
+				txt_SpecificEvents_prev: "",
+				txt_SpecificEvents_after: "события:",
+				txt_NextEvents: "",
+				txt_GoToEventUrl: "Смотреть",
+				moment: {
+					"months" : [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+					"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+					"monthsShort" : [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+					"Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+					"weekdays" : [ "Воскресенье", "Понедельник","Вторник","Среда","Четверг",
+					"Пятница","Суббота" ],
+					"weekdaysShort" : [ "Вс","Пн","Вт","Ср","Чт",
+					"Пт","Сб" ],
+					"weekdaysMin" : [ "Вс","Пн","Вт","Ср","Чт",
+					"Пт","Сб" ]
+				}
+			}
+		});
+	});
+	</script>
+</body>
+</html>
